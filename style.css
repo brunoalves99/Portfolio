@@ -1,0 +1,246 @@
+*{
+    margin:0; padding:0;
+    box-sizing:border-box; text-decoration:none;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    width:100%;
+    position:fixed;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:40px 100px;
+    transition: 0.6s;
+}
+
+header.sticky{
+    background-color:#fff;
+    padding:15px 100px;
+}
+
+header div a{
+    color:#fff;
+    font-size:1.5em;
+    font-weight: bold;
+    letter-spacing: 3px;
+    transition: 0.6s;
+}
+
+nav ul{
+    position: relative;
+    display:flex;
+}
+
+nav ul li{
+    list-style-type:none;
+    margin-left:30px;
+}
+
+nav ul li a{
+    color:#fff;
+    font-size:1.1em;
+    transition: 0.6s;
+}
+
+header.sticky nav ul li a, header.sticky div a{
+    color:#000;
+}
+
+.sec-one{
+    width:100%;
+    height:100vh;
+    background:url(img/bg.jpg);
+    background-size:cover;
+    display:flex;
+    align-items: center;
+}
+
+.myname{
+    width:60%;
+    color:#fff;
+    margin-left:100px;
+}
+
+.myname h1{
+    font-size:4em;
+    line-height:70px;
+    margin-left: -2px;
+}
+
+.myname h5{
+    font-style: italic;
+}
+
+/* SKILLS */
+.skills, .projetos, .certificados, .contato{
+    background-color:rgb(221, 221, 221);
+    padding-top:80px;
+}
+
+.title-skills, .title-projetos,
+.title-certificados, .title-contato{
+    width:100%;
+    margin-bottom:50px;
+}
+
+.title-skills h1, .title-skills p,
+.title-projetos h1, .title-certificados h1,
+.title-contato {
+    text-align:center;
+}
+
+.title-skills h1, .title-projetos h1,
+.title-certificados h1, .title-contato h1{
+    font-size:2.4em;
+    letter-spacing: 3px;
+    margin-bottom:10px;
+}
+
+.skills-plus, .projetos-plus,
+.certificados-plus, .contato-plus{
+    width:100%;
+    padding:0 100px;
+    display:flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+
+.skills-card{
+    width:300px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:50px;
+}
+
+.skills-card img{
+    width:100px;
+    border-radius: 10px;
+}
+
+.skills-card h2{
+    margin:10px 0 8px 0;
+}
+
+.skills-card p{
+    text-align: center;
+}
+
+#img-js{
+    width:200px;
+    margin-top: -6px;
+}
+
+/*=== PROJETOS ===*/
+.projetos, .certificados, .contato{
+    padding-bottom: 50px;
+}
+
+.pro-img, .certificados img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.pro-each, .cert-each {
+  margin-bottom: 20px;
+}
+
+.projetos img:hover {
+    outline: 2px solid black;
+}
+
+/*=== CERTIFICADOS ===*/
+.certificados img{
+    height: 170px;
+}
+
+.certificados img:hover {
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.node img:hover {
+    border: 2px solid white;
+}
+
+/*=== CONTATO ===*/
+.contato {
+    height: 500px;
+}
+.contato-plus {
+    align-items: center;
+    flex-direction: column;
+}
+
+.cont-each {
+    max-width: 400px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cont-each a {
+    color: black;
+    padding: 20px;
+}
+
+.cont-each a:hover {
+    color: rgb(63, 63, 63);
+    text-decoration: underline;
+}
+
+/*=== FOOTER ===*/
+footer {
+    width: 100%;
+    padding: 40px;
+    background-color: rgb(100, 100, 100);
+    text-align: center;
+}
+
+footer p {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 875px) {
+    header nav {
+        display: none;
+    }
+
+    .myname h1{
+        font-size: 3em;
+    }
+    
+}
+
+@media screen and (max-width: 640px) {
+    .myname h5{
+        font-size: 0.7em;
+    }
+    .myname h1{
+        font-size: 1.5em;
+    }
+    .myname h4{
+        font-size: 0.7em;
+    } 
+}
+
+@media screen and (max-width: 450px) {
+    .myname h5{
+        font-size: 0.6em;
+    }
+    .myname h1{
+        font-size: 1em;
+    }
+    .myname h4{
+        font-size: 0.6em;
+    } 
+}
